@@ -1,11 +1,20 @@
 .benefits-list {
-  display: flex;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .benefits-item {
-  width: calc(100% / 4 - 30px);
-  margin-left: 30px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .place-icon {
@@ -27,6 +36,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .benefits-text {
