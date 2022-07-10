@@ -13,7 +13,10 @@
 }
 
 .menu {
-  display: flex;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .nav__menu {
@@ -26,8 +29,11 @@
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .logo {

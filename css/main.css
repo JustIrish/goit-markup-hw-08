@@ -139,7 +139,12 @@ body {
 }
 
 .menu {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .nav__menu {
@@ -152,8 +157,13 @@ body {
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .logo {
