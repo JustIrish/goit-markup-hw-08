@@ -144,6 +144,15 @@ body {
 
 .menu-mob__conteiner {
   padding: 10px 15px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.menu-mob__wrap-top {
+  margin-bottom: 50px;
 }
 
 .menu-close-btn {
@@ -181,6 +190,7 @@ body {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  margin-bottom: 64px;
 }
 
 .contacts-mob__link {
