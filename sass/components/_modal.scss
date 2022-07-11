@@ -10,20 +10,32 @@
 }
 
 .modal {
-  position: absolute;
+  overflow: scroll;
+  position: fixed;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 25px;
   transform: translate(-50%, -50%) scale(1);
   transform-origin: top left;
-  width: 528px;
-  min-height: 581px;
+  width: 300px;
+  height: 85%;
+  min-height: 570px;
+
   background-color: var(--main-backgr-color);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
+  }
+  @include mobile {
+    padding: 40px;
+    width: 450px;
+    min-height: 609px;
+  }
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -63,11 +75,14 @@
 .modal-title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 12px;
+  @include desktop {
+    line-height: 1.15;
+  }
 }
 
 .modal-field + .modal-field {
@@ -118,7 +133,7 @@
 
 .modal-text {
   width: 100%;
-  height: 120px;
+  height: 100px;
   padding: 12px 16px;
   background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -133,6 +148,9 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+  @include mobile {
+    height: 120px;
+  }
 }
 
 .modal-check {
@@ -144,10 +162,17 @@
 
 .label-check {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-
+  font-size: 11px;
   line-height: 1.17;
+  @include mobile {
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 14px;
+  }
 }
 
 .icon-wrap {
