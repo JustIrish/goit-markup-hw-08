@@ -163,6 +163,10 @@ body {
   height: 40px;
   background-color: transparent;
   margin-left: auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-close-btn:hover, .menu-close-btn:focus {
+  fill: var(--accent-color);
 }
 
 .menu-mob__list {
@@ -179,6 +183,10 @@ body {
 
 .menu-mob__link {
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-mob__link:hover, .menu-mob__link:focus {
+  color: var(--accent-color);
 }
 
 .current {
@@ -195,20 +203,43 @@ body {
 
 .contacts-mob__link {
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-mob__link:hover, .contacts-mob__link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-mob__tel {
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.18;
   color: var(--accent-color);
+}
+@media screen and (min-width: 420px) {
+  .contacts-mob__tel {
+    font-size: 34px;
+  }
 }
 
 .socials-list {
   display: flex;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 12px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+@media screen and (min-width: 420px) {
+  .socials-list {
+    font-size: 18px;
+  }
+}
+
+.socials-list__item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.socials-list__item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .socials-list__link {
@@ -336,6 +367,10 @@ body {
   height: 40px;
   background-color: transparent;
   margin-left: auto;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-btn:hover, .menu-btn:focus {
+  fill: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .menu-btn {
