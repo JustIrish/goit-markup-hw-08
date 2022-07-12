@@ -4,7 +4,7 @@
   column-gap: 8px;
   row-gap: 15px;
   margin-bottom: 50px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     justify-content: center;
   }
 }
@@ -43,10 +43,10 @@
 
 .portfolio-item {
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: calc((100% - 60px) / 3);
   }
 }
@@ -64,10 +64,10 @@
     padding: 77px 24px;
     font-size: 18px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     padding: 49px 24px 77px 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding: 63px 24px;
   }
 
