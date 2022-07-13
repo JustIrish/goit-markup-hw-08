@@ -136,10 +136,9 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  visibility: visible;
   transform: scale(1);
   transform-origin: top right;
-  transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .menu-mob {
