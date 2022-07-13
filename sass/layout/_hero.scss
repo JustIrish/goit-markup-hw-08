@@ -15,7 +15,6 @@ $bgGradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   }
 
   @include tablet {
-    max-width: 768px;
     background-image: $bgGradient, url("../img/hero/hero-tablet.jpg");
     @include retina {
       background-image: $bgGradient, url("../img/hero/hero-tablet-2x.jpg");
