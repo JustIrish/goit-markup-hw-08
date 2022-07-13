@@ -187,7 +187,11 @@
             <li class="work-item">
               <div class="work-desc">
                 <img
-                  src="./img/box1.jpg"
+                  srcset="
+                    ./img/works/desktops.jpg    1x,
+                    ./img/works/desktops-2x.jpg 2x
+                  "
+                  src="./img/works/desktops.jpg"
                   alt="работа на компьютере"
                   width="370"
                 />
@@ -197,7 +201,11 @@
             <li class="work-item">
               <div class="work-desc">
                 <img
-                  src="./img/box2.jpg"
+                  srcset="
+                    ./img/works/mobiles.jpg    1x,
+                    ./img/works/mobiles-2x.jpg 2x
+                  "
+                  src="./img/works/mobiles.jpg"
                   alt="работа на телефоне"
                   width="370"
                 />
@@ -207,7 +215,11 @@
             <li class="work-item">
               <div class="work-desc">
                 <img
-                  src="./img/box3.jpg"
+                  srcset="
+                    ./img/works/design.jpg    1x,
+                    ./img/works/design-2x.jpg 2x
+                  "
+                  src="./img/works/design.jpg"
                   alt="работа на планшете"
                   width="370"
                 />
@@ -222,11 +234,35 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="card-list list">
             <li class="card-list__item">
-              <img
-                src="./img/img1.jpg"
-                alt="Парень в бордовой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/desktop/designer.jpg    1x,
+                    ./img/team/desktop/designer-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tablet/designer-tab.jpg    1x,
+                    ./img/team/tablet/designer-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mobile/designer-mob.jpg    1x,
+                    ./img/team/mobile/designer-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/team/mobile/designer-mob.jpg"
+                  alt="Парень в бордовой рубашке"
+                  width="450"
+                />
+              </picture>
+
               <div class="card-list__desc">
                 <h3 class="card-list__name">Игорь Демьяненко</h3>
                 <p class="card-list__prof">Product Designer</p>
@@ -260,7 +296,34 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img src="./img/img2.jpg" alt="Девушка блондинка" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/desktop/frontend.jpg    1x,
+                    ./img/team/desktop/frontend-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tablet/frontend-tab.jpg    1x,
+                    ./img/team/tablet/frontend-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mobile/frontend-mob.jpg    1x,
+                    ./img/team/mobile/frontend-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/team/mobile/frontend-mob.jpg"
+                  alt="Девушка блондинка"
+                  width="450"
+                />
+              </picture>
               <div class="card-list__desc">
                 <h3 class="card-list__name">Ольга Репина</h3>
                 <p class="card-list__prof">Frontend Developer</p>
@@ -294,11 +357,34 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./img/img3.jpg"
-                alt="Парень в голубой рубашке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/desktop/Marketing.jpg    1x,
+                    ./img/team/desktop/Marketing-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tablet/Marketing-tab.jpg    1x,
+                    ./img/team/tablet/Marketing-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mobile/Marketing-mob.jpg    1x,
+                    ./img/team/mobile/Marketing-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/team/mobile/Marketing-mob.jpg"
+                  alt="Парень в голубой рубашке"
+                  width="450"
+                />
+              </picture>
               <div class="card-list__desc">
                 <h3 class="card-list__name">Николай Тарасов</h3>
                 <p class="card-list__prof">Marketing</p>
@@ -332,11 +418,34 @@
               </div>
             </li>
             <li class="card-list__item">
-              <img
-                src="./img/img4.jpg"
-                alt="Парень в черной футболке"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./img/team/desktop/ui.jpg    1x,
+                    ./img/team/desktop/ui-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/tablet/ui-tab.jpg    1x,
+                    ./img/team/tablet/ui-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/team/mobile/ui-mob.jpg    1x,
+                    ./img/team/mobile/ui-mob-2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/team/mobile/ui-mob.jpg"
+                  alt="Парень в черной футболке"
+                  width="450"
+                />
+              </picture>
               <div class="card-list__desc">
                 <h3 class="card-list__name">Михаил Ермаков</h3>
                 <p class="card-list__prof">UI Designer</p>
