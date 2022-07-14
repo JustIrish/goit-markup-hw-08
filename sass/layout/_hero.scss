@@ -31,7 +31,7 @@ $bgGradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .hero-title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto 30px;
 
   color: var(--second-text-color);
@@ -45,6 +45,7 @@ $bgGradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   text-align: center;
 
   @include desktop {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
